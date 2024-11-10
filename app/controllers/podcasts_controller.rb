@@ -8,10 +8,6 @@ class PodcastsController < ApiController
   def create
     podcast = Podcast.new(podcast_params)
 
-    # p "***"
-
-    # p podcast.episodes
-
     if podcast.valid?
       podcast.save
 
